@@ -4,23 +4,24 @@ import {
 } from "react-router-dom";
 import Footer from "./components/Shared/Footer";
 import Header from './components/Shared/Header/Header';
-import MainAbout from "./pages/AboutPage/MainAbout/MainAbout";
-import Home from "./pages/HomePage/MainHome/MainHome";
-import Login from './pages/Login/Login';
-import SearchProduct from './pages/SerchProducts/SerchProducts';
+// import MainAbout from "./pages/AboutPage/MainAbout/MainAbout";
+import Login from "./Pages/Login/Login";
+// import SearchProduct from './pages/SerchProducts/SerchProducts';
+// import MainAbout from './Pages/AboutPage/MainAbout/MainAbout';
+import MainHome from './Pages/HomePage/MainHome/MainHome';
 export default function App() {
   return (
     <Router>
       <Header />
       <Switch>
         <Route exact path="/">
-          <Home />
+          <MainHome/>
         </Route>
         <Route path="/products">
-          <SearchProduct />
+          {/* <SearchProduct /> */}
         </Route>
         <Route path="/about">
-          <MainAbout />
+          {/* <MainAbout/> */}
         </Route>
         <Route path="/login">
           <Login />
