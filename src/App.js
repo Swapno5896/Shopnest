@@ -14,10 +14,13 @@ return (
   <Switch>
     <Route exact path="/">
       <Home />
-      <SearchProduct />
+
     </Route>
     <Route path="/about">
       <MainAbout />
+    </Route>
+    <Route path="/products">
+      <SearchProduct />
     </Route>
   </Switch>
   <Footer />

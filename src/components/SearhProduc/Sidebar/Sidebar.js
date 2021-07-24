@@ -2,7 +2,7 @@ import React from 'react';
 
 const Product = () => {
 return (
-<div>
+<div class="pl-16">
  <div class="m-8">
   <p class="font-semibold text-4xl">Service</p>
   <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
