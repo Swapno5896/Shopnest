@@ -1,29 +1,32 @@
 import React from "react";
 import {
-BrowserRouter as Router, Route, Switch
+  BrowserRouter as Router, Route, Switch
 } from "react-router-dom";
-import MainAbout from "./components/AboutPage/MainAbout/MainAbout";
-import Home from "./components/HomePage/MainHome/MainHome";
 import Footer from "./components/Shared/Footer";
-import Navbar from "./components/Shared/Navbar";
-import SearchProduct from './Pages/SerchProducts/SerchProducts'
+import Header from './components/Shared/Header/Header';
+import MainAbout from "./pages/AboutPage/MainAbout/MainAbout";
+import Home from "./pages/HomePage/MainHome/MainHome";
+import Login from './pages/Login/Login';
+import SearchProduct from './pages/SerchProducts/SerchProducts';
 export default function App() {
-return (
-<Router>
-  <Navbar />
-  <Switch>
-    <Route exact path="/">
-      <Home />
-
-    </Route>
-    <Route path="/about">
-      <MainAbout />
-    </Route>
-    <Route path="/products">
-      <SearchProduct />
-    </Route>
-  </Switch>
-  <Footer />
-</Router>
-);
+  return (
+    <Router>
+      <Header />
+      <Switch>
+        <Route exact path="/">
+          <Home />
+        </Route>
+        <Route path="/products">
+          <SearchProduct />
+        </Route>
+        <Route path="/about">
+          <MainAbout />
+        </Route>
+        <Route path="/login">
+          <Login />
+        </Route>
+      </Switch>
+      <Footer />
+    </Router>
+  );
 }
