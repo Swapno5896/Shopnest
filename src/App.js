@@ -4,6 +4,7 @@ import MainAbout from './components/AboutPage/MainAbout/MainAbout';
 import Home from './components/HomePage/MainHome/MainHome';
 import Footer from './components/Shared/Footer';
 import Header from './components/Shared/Header/Header';
+import Login from './pages/Login/Login';
 
 export default function App() {
   return (
@@ -15,6 +16,9 @@ export default function App() {
         </Route>
         <Route path="/about">
           <MainAbout />
+        </Route>
+        <Route path="/login">
+          <Login />
         </Route>
       </Switch>
       <Footer />
