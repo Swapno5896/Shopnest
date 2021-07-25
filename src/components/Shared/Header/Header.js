@@ -133,9 +133,11 @@ const Header = () => {
           <button className="inline-flex items-center bg-white border-0 py-1 px-3 focus:outline-none hover:bg-red-200 hover:text-black rounded ml-2 text-base mt-4 md:mt-0">
             Sitemap
           </button>
-          <button className="inline-flex items-center bg-white border-0 py-1 px-3 focus:outline-none hover:bg-red-200 hover:text-black rounded ml-2 text-base mt-4 md:mt-0">
-            Brand
-          </button>
+          <Link to="/placeOrder">
+            <button className="inline-flex items-center bg-white border-0 py-1 px-3 focus:outline-none hover:bg-red-200 hover:text-black rounded ml-2 text-base mt-4 md:mt-0">
+              Brand
+            </button>
+          </Link>
         </nav>
       </div>
     </header>

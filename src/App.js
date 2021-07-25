@@ -9,6 +9,7 @@ import Login from "./Pages/Login/Login";
 // import SearchProduct from './pages/SerchProducts/SerchProducts';
 // import MainAbout from './Pages/AboutPage/MainAbout/MainAbout';
 import MainHome from './Pages/HomePage/MainHome/MainHome';
+import PlaceOrder from "./components/PlaceOrder/PlaceOrder";
 export default function App() {
   return (
     <Router>
@@ -17,15 +18,24 @@ export default function App() {
         <Route exact path="/">
           <MainHome/>
         </Route>
+
         <Route path="/products">
           {/* <SearchProduct /> */}
         </Route>
+
         <Route path="/about">
           {/* <MainAbout/> */}
         </Route>
+
         <Route path="/login">
           <Login />
         </Route>
+
+        <Route path="/placeOrder">
+          <PlaceOrder/>
+        </Route>
+
+
       </Switch>
       <Footer />
     </Router>
