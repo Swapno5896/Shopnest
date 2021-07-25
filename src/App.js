@@ -4,10 +4,9 @@ import {
 } from "react-router-dom";
 import Footer from "./components/Shared/Footer";
 import Header from './components/Shared/Header/Header';
-import MainAbout from "./pages/AboutPage/MainAbout/MainAbout";
-import Home from "./pages/HomePage/MainHome/MainHome";
-import Login from './pages/Login/Login';
-import SearchProduct from './pages/SerchProducts/SerchProducts';
+import Home from "./Pages/HomePage/Home";
+import Login from './Pages/Login/Login';
+import SearchProduct from "./Pages/SearchProducts/SearchProducts";
 export default function App() {
   return (
     <Router>
@@ -18,9 +17,6 @@ export default function App() {
         </Route>
         <Route path="/products">
           <SearchProduct />
-        </Route>
-        <Route path="/about">
-          <MainAbout />
         </Route>
         <Route path="/login">
           <Login />

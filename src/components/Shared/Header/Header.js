@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Navbar from '../Navbar';
 
 const Header = () => {
   return (
@@ -84,7 +85,7 @@ const Header = () => {
       {/* here is the start of  search bar nav */}
 
       <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-        <Link className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+        <Link className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0" to="/">
           <span className="ml-3 text-xl">ShopNest</span>
         </Link>
         <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
@@ -120,23 +121,7 @@ const Header = () => {
       {/* here is the start of  search bar nav */}
 
       <div className="container mx-auto flex flex-wrap text-black p-5 flex-col bg-red-200 md:flex-row items-center">
-        <nav className="md:mr-auto md:ml-4 md:py-1 flex flex-wrap items-center text-base justify-items-start">
-          <button className="inline-flex items-center bg-white border-0 py-1 px-3 focus:outline-none hover:bg-red-200 hover:text-black rounded ml-2 text-base mt-4 md:mt-0">
-            Home
-          </button>
-          <button className="inline-flex items-center bg-white border-0 py-1 px-3 focus:outline-none hover:bg-red-200 hover:text-black rounded ml-2 text-base mt-4 md:mt-0">
-            Special Offers
-          </button>
-          <button className="inline-flex items-center bg-white border-0 py-1 px-3 focus:outline-none hover:bg-red-200 hover:text-black rounded ml-2 text-base mt-4 md:mt-0">
-            Contact
-          </button>
-          <button className="inline-flex items-center bg-white border-0 py-1 px-3 focus:outline-none hover:bg-red-200 hover:text-black rounded ml-2 text-base mt-4 md:mt-0">
-            Sitemap
-          </button>
-          <button className="inline-flex items-center bg-white border-0 py-1 px-3 focus:outline-none hover:bg-red-200 hover:text-black rounded ml-2 text-base mt-4 md:mt-0">
-            Brand
-          </button>
-        </nav>
+        <Navbar />
       </div>
     </header>
   );
