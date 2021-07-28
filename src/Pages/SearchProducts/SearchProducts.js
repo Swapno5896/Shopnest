@@ -1,6 +1,6 @@
 import React from 'react';
-import Products from '../../components/SearhProduct/Products/Products';
-import Sidebar from '../../components/SearhProduct/Sidebar/Sidebar';
+import Product from '../../components/SearchProduct/Products/Product';
+import Sidebar from '../../components/SearchProduct/Sidebar/Sidebar';
 import img1 from '../../images/pd.png';
 const SearchProduct = () => {
     const fakeProduct = [
@@ -42,7 +42,7 @@ const SearchProduct = () => {
                     <div class="grid grid-cols-3 gap-4 pr-5">
                         {
                             fakeProduct.map(pd =>
-                                <Products pd={pd} />)
+                                <Product pd={pd} />)
                         }
                     </div>
                 </div>

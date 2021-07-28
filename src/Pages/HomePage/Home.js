@@ -1,12 +1,19 @@
-import React from 'react';
-import SearchProduct from '../SearchProducts/SearchProducts';
+import React, { useEffect, useState } from "react";
+import Categories from "../../components/Categories/Categories";
 
 const Home = () => {
-    return (
-        <div>
-            <SearchProduct />
-        </div>
-    );
+    const [shopdata, setShopdata] = useState({})
+    useEffect( () => {
+      fetch("/data.json")
+      .then(res => res.json())
+      .then(data => setShopdata(data))
+    }, []);
+  return (
+    <div>
+      {/* <SearchProduct /> */}
+      {shopdata.categories && shopdata.categories.map(category => <Categories category={category} />)}
+    </div>
+  );
 };
 
 export default Home;
