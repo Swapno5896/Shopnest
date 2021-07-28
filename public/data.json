@@ -1,0 +1,68 @@
+{
+  "categories": [
+    {
+      "title": "Electronics",
+      "shoplist": [
+        {
+          "shopname": "amar Electric",
+          "shopid": "E001",
+          "products": [
+            {
+              "title": "Celkey 10 inch RGB Selfie Ring Light",
+              "subtitle": "with Tripod Stand and Phone Holder for Makeup,Photography,YouTube Videos,Vlog,TIK Tok Compatible with iPhone & Android",
+              "price": "$38.99",
+              "stock": 1000
+            },
+            {
+              "title": "2021 Selfie Stick, Tripod, Mobile Phone Holder",
+              "subtitle": "Live Streaming Artifact, Detachable Remote Control, Compatible with iPhone 12/11/XR/X/Pro and Android Mobile Devices, Black",
+              "price": "$19.99",
+              "stock": 154
+            }
+          ]
+        },
+        {
+          "shopname": "BD Electric",
+          "shopid": "E002",
+          "products": [
+            {
+              "title": "TOZO T10 Bluetooth 5.0 Wireless Earbuds",
+              "subtitle": "with Wireless Charging Case IPX8 Waterproof Stereo Headphones in Ear Built in Mic Headset Premium Sound with Deep Bass for Sport Black",
+              "price": "$29.98",
+              "stock": 956
+            },
+            {
+              "title": "USB C 3.1 Female to Male USB 3.0 New GEN Fast",
+              "subtitle": "Female to Male USB Adapter, Compatible with Laptop PC, Charger, iPhone 12/Pro Max, iPad, Samsung Galaxy S21/S20, Converter USB Charger to Type C Adapter",
+              "price": "$7.94",
+              "stock": 3159
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Computer accessories",
+      "shoplist": [
+        {
+          "shopname": "BD Electric",
+          "shopid": "C001",
+          "products": [
+            {
+              "title": "TOZO T10 Bluetooth 5.0 Wireless Earbuds",
+              "subtitle": "with Wireless Charging Case IPX8 Waterproof Stereo Headphones in Ear Built in Mic Headset Premium Sound with Deep Bass for Sport Black",
+              "price": "$29.98",
+              "stock": 956
+            },
+            {
+              "title": "USB C 3.1 Female to Male USB 3.0 New GEN Fast",
+              "subtitle": "Female to Male USB Adapter, Compatible with Laptop PC, Charger, iPhone 12/Pro Max, iPad, Samsung Galaxy S21/S20, Converter USB Charger to Type C Adapter",
+              "price": "$7.94",
+              "stock": 3159
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -7,6 +7,7 @@ import Header from './components/Shared/Header/Header';
 import Home from "./Pages/HomePage/Home";
 import Login from './Pages/Login/Login';
 import SearchProduct from "./Pages/SearchProducts/SearchProducts";
+import SingleShop from "./Pages/SingleShop/SingleShop";
 export default function App() {
   return (
     <Router>
@@ -20,6 +21,9 @@ export default function App() {
         </Route>
         <Route path="/login">
           <Login />
+        </Route>
+        <Route path="/shop/:id">
+          <SingleShop />
         </Route>
       </Switch>
       <Footer />
