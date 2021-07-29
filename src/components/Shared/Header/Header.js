@@ -29,7 +29,7 @@ const Header = () => {
             </button>
           </div>
 
-          <div className="mr-2 border-l-2 border-white">
+          <div className="mr-2">
             <button className="inline-flex items-center bg-red-600 border-0 py-1 px-3 focus:outline-none hover:bg-red-200 hover:text-black rounded ml-2 text-base mt-4 md:mt-0">
               Currency
               <svg
@@ -46,7 +46,7 @@ const Header = () => {
             </button>
           </div>
 
-          <div className="mr-2 border-l-2 border-white">
+          <div className="mr-2">
             <button className="inline-flex items-center bg-red-600 border-0 py-1 px-3 focus:outline-none hover:bg-red-200 hover:text-black rounded ml-2 text-base mt-4 md:mt-0">
               Language
               <svg
@@ -63,7 +63,7 @@ const Header = () => {
             </button>
           </div>
 
-          <div className="mr-2 border-l-2 border-white">
+          <div className="mr-2">
             <button className="inline-flex items-center bg-red-600 border-0 py-1 px-3 focus:outline-none hover:bg-red-200 hover:text-black rounded ml-2 text-base mt-4 md:mt-0">
               My Account
               <svg
@@ -85,7 +85,10 @@ const Header = () => {
       {/* here is the start of  search bar nav */}
 
       <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-        <Link className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0" to="/">
+        <Link
+          className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"
+          to="/"
+        >
           <span className="ml-3 text-xl">ShopNest</span>
         </Link>
         <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
