@@ -1,0 +1,192 @@
+.order-checkout {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  margin: 30px 50px;
+  grid-gap: 20px;
+  .order-list {
+    background-color: #0e0e0e;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    color: lightgrey;
+    border-radius: 6px;
+    .delivery-option {
+      background-color: #560303;
+      padding: 15px;
+      div {
+        margin-top: 10px;
+        p {
+          border: 1px solid lightgrey;
+          width: 40%;
+          padding-top: 25px;
+          padding-left: 40px;
+          border-radius: 8px;
+        }
+      }
+    }
+    .select-all-checkbox {
+      label {
+        display: flex;
+        flex-direction: row;
+        background-color: #560303;
+        margin: 15px 0 0 0;
+        padding: 10px;
+        input {
+          align-self: center;
+          margin-right: 5px;
+        }
+        div {
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+        }
+      }
+    }
+    .checout-product-wrapper {
+      .single-checkout-product {
+        background-color: #560303;
+        padding: 10px;
+        margin-top: 10px;
+        .seller-checkbox {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          border-bottom: 1px solid #0e0e0e;
+          input {
+            margin-right: 5px;
+          }
+        }
+        .product-checkbox {
+          display: flex;
+          flex-direction: row;
+          input {
+            align-self: center;
+            margin-right: 5px;
+          }
+          label {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            .product-details {
+              display: flex;
+              flex-direction: row;
+              width: 75%;
+              padding: 15px;
+              img {
+                padding: 7px;
+                width: 150px;
+                height: 150px;
+              }
+              div {
+                margin-left: 3px;
+                p:first-child {
+                  margin-bottom: 5px;
+                  padding-top: 5px;
+                }
+                span {
+                  font-size: 14px;
+                  color: lightgrey;
+                }
+              }
+            }
+            .product-price {
+              display: flex;
+              flex-direction: column;
+              padding: 15px 0;
+              margin-top: 5px;
+              h3 {
+                font-size: 22px;
+                color: orange;
+              }
+              strike {
+                color: lightgrey;
+                font-size: 15px;
+              }
+              h6 {
+                color: lightgrey;
+              }
+              p {
+                display: flex;
+                flex-direction: row;
+                p:first-child {
+                  margin-right: 10px;
+                }
+              }
+            }
+            .product-quantity {
+              display: flex;
+              flex-direction: row;
+              width: 15%;
+              padding: 15px 0;
+              justify-content: center;
+              margin: 20px;
+              p {
+                width: 100%;
+                padding: 0px 0px 5px 9px;
+                height: 26px;
+                margin: 5px;
+              }
+              p:first-child,
+              p:last-child {
+                background-color: #0e0e0e;
+                font-size: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .order-summary {
+    background-color: #560303;
+    padding: 10px;
+    border-radius: 6px;
+    height: fit-content;
+    color: lightgrey;
+    .order-subtotal {
+      h3 {
+        font-size: 21px;
+      }
+      div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+    }
+    .apply-voucher {
+      input {
+        border: 1px solid lightgrey;
+        padding: 5px;
+        background: none;
+        margin: 5px 0;
+        &:focus {
+          outline: none;
+        }
+      }
+      button {
+        width: 31%;
+        padding: 5px;
+        text-align: center;
+        background-color: #0e0e0e;
+        border: 1px solid #0e0e0e;
+      }
+    }
+    .order-total {
+      div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        p:last-child {
+          font-size: 21px;
+          color: orange;
+        }
+      }
+      button {
+        text-align: center;
+        width: 100%;
+        padding: 5px;
+        background-color: #0e0e0e;
+      }
+    }
+  }
+}

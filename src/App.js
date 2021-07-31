@@ -4,6 +4,7 @@ import MainAbout from './components/AboutPage/MainAbout/MainAbout';
 import Home from './components/HomePage/MainHome/MainHome';
 import Footer from './components/Shared/Footer';
 import Header from './components/Shared/Header/Header';
+import Checkout from './pages/Checkout/Checkout';
 import Login from './pages/Login/Login';
 
 export default function App() {
@@ -19,6 +20,9 @@ export default function App() {
         </Route>
         <Route path="/login">
           <Login />
+        </Route>
+        <Route path="/checkout">
+          <Checkout />
         </Route>
       </Switch>
       <Footer />
