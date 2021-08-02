@@ -4,11 +4,11 @@ import {
 } from "react-router-dom";
 import Footer from "./components/Shared/Footer";
 import Header from './components/Shared/Header/Header';
-import Trending from "./components/Trending/Trending";
-import Home from "./Pages/HomePage/Home";
-import Login from './Pages/Login/Login';
-import SearchProduct from "./Pages/SearchProducts/SearchProducts";
-import SingleShop from "./Pages/SingleShop/SingleShop";
+import Trending from "./components/Shared/Trending/Trending";
+import Home from "./pages/HomePage/Home";
+import Login from './pages/Login/Login';
+import SearchProduct from "./pages/SearchProducts/SearchProducts";
+import SingleShop from "./pages/SingleShop/SingleShop";
 export default function App() {
   return (
     <Router>

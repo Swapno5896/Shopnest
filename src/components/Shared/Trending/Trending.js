@@ -7,7 +7,7 @@ const Trending = () => {
   };
   const buttonclasses = 'p-2 rounded-md mx-3 transition duration-500 ease-in-out bg-red-400 hover:bg-red-600 text-white';
   return (
-    <div className="bg-red-50 p-4 rounded-lg text-center max-w-lg m-auto mt-5">
+    <div className="bg-red-50 p-4 rounded-lg text-center max-w-lg m-auto mt-8">
       <button
         className={tab === 'offers' ? `${buttonclasses} bg-green-600` : `${buttonclasses}`}
         onClick={() => handleTab("offers")}

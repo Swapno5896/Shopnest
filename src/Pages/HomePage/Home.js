@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Categories from "../../components/Categories/Categories";
-import Trending from "../../components/Trending/Trending";
+import Trending from "../../components/Shared/Trending/Trending";
 
 const Home = () => {
   const [shopdata, setShopdata] = useState({});
