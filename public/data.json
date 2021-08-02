@@ -2,6 +2,7 @@
   "categories": [
     {
       "title": "Electronics",
+      "img": "https://image.freepik.com/free-psd/logo-mockup_35913-2089.jpg",
       "shoplist": [
         {
           "shopname": "amar Electric",
@@ -43,6 +44,7 @@
     },
     {
       "title": "Computer accessories",
+      "img": "https://image.freepik.com/free-psd/logo-mockup_35913-2089.jpg",
       "shoplist": [
         {
           "shopname": "BD Electric",
@@ -63,6 +65,22 @@
           ]
         }
       ]
+    },
+    {
+      "title": "Kitchen",
+      "img": "https://image.freepik.com/free-psd/logo-mockup_35913-2089.jpg"
+    },
+    {
+      "title": "Cleaning",
+      "img": "https://image.freepik.com/free-psd/logo-mockup_35913-2089.jpg"
+    },
+    {
+      "title": "Digital services",
+      "img": "https://image.freepik.com/free-psd/logo-mockup_35913-2089.jpg"
+    },
+    {
+      "title": "Shoes",
+      "img": "https://image.freepik.com/free-psd/logo-mockup_35913-2089.jpg"
     }
   ]
 }
