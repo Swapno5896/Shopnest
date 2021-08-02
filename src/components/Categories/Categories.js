@@ -1,21 +1,19 @@
 import React from "react";
-import Shop from "../Shop/Shop";
 
 const Categories = ({ category }) => {
   // console.log(category);
-  const { title, shoplist } = category;
+  const { title, img } = category;
   return (
-    <div className="px-5">
-      <h1 className="text-lg text-red-900 italic font-bold">{title}</h1>
-      <section className="text-gray-600 body-font">
-        <div className="container p-10 mx-auto">
-          <div className="flex flex-wrap -m-4">
-            {shoplist.map((shop) => (
-              <Shop shop={shop} />
-            ))}
-          </div>
-        </div>
-      </section>
+    <div className="mx-5 my-8 p-4 bg-red-200 rounded-2xl shadow-xl">
+      <h1 className="text-red-500 text-2xl font-semibold text-center">{title}</h1>
+      <div className="flex flex-row flex-wrap flex-auto justify-center">
+        <img src={img} alt="logo" width={50} style={{margin: '5px'}} className="rounded-md shadow-lg" />
+        <img src={img} alt="logo" width={50} style={{margin: '5px'}} className="rounded-md shadow-lg" />
+        <img src={img} alt="logo" width={50} style={{margin: '5px'}} className="rounded-md shadow-lg" />
+        <img src={img} alt="logo" width={50} style={{margin: '5px'}} className="rounded-md shadow-lg" />
+        <img src={img} alt="logo" width={50} style={{margin: '5px'}} className="rounded-md shadow-lg" />
+        <img src={img} alt="logo" width={50} style={{margin: '5px'}} className="rounded-md shadow-lg" />
+      </div>
     </div>
   );
 };
