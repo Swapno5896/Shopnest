@@ -11,7 +11,7 @@ const Home = () => {
   }, []);
   return (
     <div>
-      {/* <SearchProduct /> */}
+      {/* <SearchProsddssduct /> */}
       {shopdata.categories &&
         shopdata.categories.map((category) => (
           <Categories category={category} />
