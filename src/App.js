@@ -1,8 +1,6 @@
-import React from "react";
-import {
-  BrowserRouter as Router, Route, Switch
-} from "react-router-dom";
-import Footer from "./components/Shared/Footer";
+import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Footer from './components/Shared/Footer';
 import Header from './components/Shared/Header/Header';
 import Trending from "./components/Shared/Trending/Trending";
 import Home from "./pages/HomePage/Home";
@@ -20,9 +18,21 @@ export default function App() {
         <Route path="/products">
           <SearchProduct />
         </Route>
+        <PrivateRoute path="/updateProfile">
+            <UpdateProfile />
+          </PrivateRoute>
+          <PrivateRoute path="/dashboard">
+            <Dashboard />
+          </PrivateRoute>
         <Route path="/login">
           <Login />
         </Route>
+        <Route path="/resetPassword">
+            <ForgotPassword />
+          </Route>
+          <Route path="/signup">
+            <Signup />
+          </Route>
         <Route path="/trendings">
           <Trending />
         </Route>

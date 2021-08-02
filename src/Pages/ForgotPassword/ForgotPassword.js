@@ -1,25 +1,26 @@
 import React, { useRef, useState } from 'react';
-import { Link, useHistory } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { useAuth } from '../../context/AuthContext';
 
 const Login = () => {
   const emailRef = useRef();
   const passwordRef = useRef();
-  const { login } = useAuth();
+  const { resetPassword } = useAuth();
   const [error, setError] = useState('');
+  const [message, setMessage] = useState('');
   const [loading, setLoading] = useState(false);
-  const history = useHistory();
 
   async function handleSubmit(e) {
     e.preventDefault();
 
     try {
+      setMessage('');
       setError('');
       setLoading(true);
-      await login(emailRef.current.value, passwordRef.current.value);
-      history.push('/');
+      await resetPassword(emailRef.current.value);
+      setMessage('Check inbox for further instruction');
     } catch (err) {
-      setError('Failed to sign in');
+      setError('Failed to reset password');
     }
     setLoading(false);
   }
@@ -92,15 +93,10 @@ const Login = () => {
           <div className="absolute bg-black opacity-60 inset-0 z-0" />
         </div>
         <div className="w-full py-6 z-20">
-          {error && (
-            <h1 className="my-6 bg-pink-600"> Wrong Credentials, {error} </h1>
+          {error && <h1 className="my-6 bg-pink-600"> {error} </h1>}
+          {message && (
+            <h1 className="bg-green-600 text-xl text-white">{message}</h1>
           )}
-          <div className="py-6 space-x-2">
-            <span className="w-20 h-10 items-center justify-center inline-flex rounded-full font-bold text-lg border-2 border-white">
-              Gmail
-            </span>
-          </div>
-          <p className="text-gray-100">or use your email for log in</p>
           <form
             onSubmit={handleSubmit}
             className="sm:w-2/3 w-full px-4 lg:px-0 mx-auto"
@@ -116,17 +112,6 @@ const Login = () => {
                 className="block w-full p-4 text-lg rounded-sm bg-black"
               />
             </div>
-            <div className="pb-2 pt-4">
-              <input
-                className="block w-full p-4 text-lg rounded-sm bg-black"
-                type="password"
-                name="password"
-                id="password"
-                ref={passwordRef}
-                required
-                placeholder="Password"
-              />
-            </div>
 
             <div className="px-4 pb-2 pt-4">
               <button
@@ -134,14 +119,14 @@ const Login = () => {
                 style={{ background: '#dc2626' }}
                 className="uppercase block w-full p-4 text-lg rounded-full bg-indigo-500 hover:bg-indigo-600 focus:outline-none"
               >
-                Login
+                Reset Password
               </button>
             </div>
-            <div className=" text-red-400 hover:underline hover:text-gray-100">
-              <Link to="/resetPassword">Forgot your password</Link>
+            <div className="text-center text-gray-400 hover:underline hover:text-gray-100">
+              <Link to="/login">Login Now</Link>
             </div>
             <div className="text-center text-gray-400 hover:underline hover:text-gray-100">
-              <Link to="/signup">Do not have account, create one</Link>
+              <Link to="/signup">Need an account, Sign up</Link>
             </div>
 
             <div className="p-4 text-center right-0 left-0 flex justify-center space-x-4 mt-16 lg:hidden ">
