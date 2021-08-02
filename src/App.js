@@ -1,12 +1,16 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import MainAbout from './components/AboutPage/MainAbout/MainAbout';
-import Home from './components/HomePage/MainHome/MainHome';
 import Footer from './components/Shared/Footer';
 import Header from './components/Shared/Header/Header';
+<<<<<<< HEAD
 import Checkout from './pages/Checkout/Checkout';
+=======
+import Trending from "./components/Shared/Trending/Trending";
+import Home from "./pages/HomePage/Home";
+>>>>>>> main
 import Login from './pages/Login/Login';
-
+import SearchProduct from "./pages/SearchProducts/SearchProducts";
+import SingleShop from "./pages/SingleShop/SingleShop";
 export default function App() {
   return (
     <Router>
@@ -15,14 +19,34 @@ export default function App() {
         <Route exact path="/">
           <Home />
         </Route>
-        <Route path="/about">
-          <MainAbout />
+        <Route path="/products">
+          <SearchProduct />
         </Route>
+        <PrivateRoute path="/updateProfile">
+            <UpdateProfile />
+          </PrivateRoute>
+          <PrivateRoute path="/dashboard">
+            <Dashboard />
+          </PrivateRoute>
         <Route path="/login">
           <Login />
         </Route>
+<<<<<<< HEAD
         <Route path="/checkout">
           <Checkout />
+=======
+        <Route path="/resetPassword">
+            <ForgotPassword />
+          </Route>
+          <Route path="/signup">
+            <Signup />
+          </Route>
+        <Route path="/trendings">
+          <Trending />
+        </Route>
+        <Route path="/shop/:id">
+          <SingleShop />
+>>>>>>> main
         </Route>
       </Switch>
       <Footer />
